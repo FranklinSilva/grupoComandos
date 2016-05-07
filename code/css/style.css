@@ -262,6 +262,7 @@ ul.sandwich {
 
 .slider-div{
 	padding: 1rem;
+    margin: 0 auto;
 }
 
 a .bg-gray-column{
@@ -308,7 +309,7 @@ a .bg-gray-column{
 }
 
 .main-slider .slick-dots li{
-	width: 10px;
+	/*width: 10px;*/
 }
 
 .main-slider, .main-section{
@@ -350,6 +351,7 @@ a .bg-gray-column{
 
 .our-services, .our-partners{
 	padding: 1rem;
+    margin: 0 auto;
 }
 
 .our-services h3{
@@ -400,6 +402,7 @@ a .bg-gray-column{
 	padding: 1rem;
 	text-align: center;
 	background: url(../img/lightning.jpg);
+    margin-bottom: -2rem;
 }
 
 .energy-generated h4{
@@ -542,4 +545,27 @@ div:nth-child(3n+3) a .card-event button{
 
 div:nth-child(3n+4) a .card-event button{
 	background-color: #2d6f68;
+}
+
+.cover-event{
+	background-color: #266371;
+}
+
+.img-text-container img, .cover-event img{
+	display: block;
+	margin: 0 auto;
+}
+
+.button-blue{
+	display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #eaeaea;
+    background-color: #2d5764;
+    transition: 1s;
+}
+
+.button-blue:hover{
+    background-color: #266371;
+    transition: 1s;
 }
