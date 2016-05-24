@@ -37,7 +37,7 @@ button::-moz-focus-inner {
 
 
 body{
-	background-color: #fdfdfd;
+	background-color: #fff;
 }
 
 .max-width{
@@ -82,7 +82,10 @@ header{
 	height: 160px;
 	box-shadow: 0px -1px 0px 0px rgba(0,0,0,1);
 	max-width: none;
-	background-image: linear-gradient(-180deg, #FDFDFD 0%, #FDFDFD 13%, #2D5764 13%, #2D5764 42%, #276270 42%, #266371 71%, #2D6F68 71%, #2D6F68 100%);
+	/*background: linear-gradient(-180deg, #FDFDFD 0%, #FDFDFD 13%, #2D5764 13%, #2D5764 42%, #276270 42%, #266371 71%, #2D6F68 71%, #2D6F68 100%);*/
+	background: -webkit-linear-gradient(#fff 0%, #fff 13%, #2D5764 13%, #2D5764 87%, #fff 87%, #fff 100%);
+	background: -o-linear-gradient(#fff 0%, #fff 13%, #2D5764 13%, #2D5764 87%, #fff 87%, #fff 100%);
+	background: linear-gradient(#fff 0%, #fff 13%, #2D5764 13%, #2D5764 87%, #fff 87%, #fff 100%);
 }
 
 header div{
@@ -149,20 +152,20 @@ p.central-paragraph{
 .logo{
 	position: relative;
     left: -0%;
-    top: 1.5rem;
+    top: .8rem;
     max-width: 240px;
 }
 
 @media screen and (min-width: 40em) and (max-width: 64rem) {
 	.logo{
-    	top: .5rem;
+    	top: -.5rem;
     	max-width: 300px;
 	}
 }
 
 @media screen and (min-width: 64em) {
 	.logo{
-	    top: .5rem;
+	    top: -.5rem;
 	    max-width: 300px;
 	}
 }
@@ -190,7 +193,7 @@ p.central-paragraph{
 }
 
 .dropdown, .inline-menu {
-	top: 5em;
+	top: 4.5em;
     position: relative;
     right: 0;
 }
@@ -210,7 +213,7 @@ p.central-paragraph{
 
 @media screen and (min-width: 64em) {
 	.inline-menu{
-		top: 5em;
+		top: 4.5em;
 	}
 
 	.inline-menu ul li a{
@@ -285,7 +288,7 @@ ul.sandwich {
 	    width: 100%;
 	    left: 0em;
 	    right: 0;
-	    top: 10em;
+	    top: 8.6rem;
 	}
 
 	ul li, li a {
@@ -668,5 +671,55 @@ div:nth-child(3n+4) a .card-event button{
 
 .form-checkout{
 	margin: 1rem auto;
+}
+
+.title-cart{
+	border-bottom: 1px solid #266371;
+    margin: 0 0 1rem 0;
+    padding: .5rem 0;
+}
+
+.cart{
+	margin: 0 auto;
+}
+
+.cart .button-green{
+	text-align: center;
+	color: #2D6F68;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.cart .button-green:hover{
+	color: #fdfdfd;
+}
+
+.product-cart{
+	padding: .5rem 0;
+}
+
+.product-cart span, .product-cart select {
+    display: block;
+    margin-top: .5rem;
+}
+
+.product-cart span a{
+	color: #266371;
+}
+
+.product-cart span a:hover{
+	color: #2d5764;
+}
+
+.line-total{
+	border-top: 1px solid #266371;
+	margin: 1rem 0 0 0;
+    padding: .5rem 0;
+    text-align: right;
+}
+
+.line-total span{
+	text-align: left;
+	display: block;
 }
 
