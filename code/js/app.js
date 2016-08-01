@@ -48,9 +48,7 @@ $('.fade').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
-  adaptiveHeight: true,
-  prevArrow:"<img class='a-left control-c prev slick-prev' src='../images/shoe_story/arrow-left.png'>",
-  nextArrow:"<img class='a-right control-c next slick-next' src='../images/shoe_story/arrow-right.png'>"
+  adaptiveHeight: true
 });
 
 
@@ -59,9 +57,25 @@ openMenu = function(){
 	console.log(menu.getAttribute("style"));
 	if(menu.getAttribute("style") == "display: block"){
 		menu.setAttribute("style","display: none");
-		console.log("desaparece");
 	} else{
 		menu.setAttribute("style","display: block");
-		console.log("aparece")
 	}
 }
+
+$(function() {
+  var ele = $('#energy');
+  var clr = null;
+  var rand = 123456788991231;
+  (loop = function() {
+    clearTimeout(clr);
+    (inloop = function() {
+      ele.html(rand+=1);
+      if(!(rand % 50)) {
+        return;
+      }
+      clr = setTimeout(inloop, 30);
+    })(); 
+    setTimeout(loop, 10);
+  })();
+});
+
